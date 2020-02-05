@@ -1,0 +1,54 @@
+
+.header {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light,0.8),
+        rgba($color-primary-dark,0.8)
+        ),
+    url('../images/hero.jpg');
+    height: 95vh;
+    background-position: top;
+    background-size: cover;
+    clip-path: polygon(0 0 ,100% 0 ,100% 75vh , 0 100%);
+    position: relative;
+
+    &.logo{
+        position: absolute;
+        top:2.5rem;
+        left: 2rem;
+
+        &.img-logo{
+            height:3rem;
+        }
+    }
+
+    &.heading-box{
+        color:$color-white;
+        text-transform: uppercase;
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        backface-visibility: hidden;
+
+        &.main-header{
+            font-size: 6rem;
+            font-weight: 400;
+            display: block;
+            animation-name:moveToleft;
+            animation-duration: 2s;
+            animation-timing-function: ease-in; 
+            letter-spacing: 1.2rem;
+        }
+
+        &.sub-header{
+            font-weight: 400;
+            font-size: 2rem;
+            animation-name: moveToRight;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            letter-spacing: 1.2rem;
+        }
+    }
+}
