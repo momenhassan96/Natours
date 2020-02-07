@@ -1,0 +1,34 @@
+.section-photo{
+    position: relative;
+    .photos{
+        width:55%;
+        box-shadow: 0rem 1.5rem 2rem rgba($color-black,0.5);
+        position: absolute;  
+        z-index:10;
+        transition:all .2s;
+        outline-offset: 2rem;
+    }
+    .photo-nat-1{
+        top:-2rem;
+        left:0;
+    }
+
+    .photo-nat-2{
+        top:2rem;
+        right:0;
+    }
+
+    .photo-nat-3{
+        top:10rem;
+        left:7rem;
+    }
+    .photos:hover{
+        transform: sclae(1.1);
+        z-index:11;
+        box-shadow: 0 2.5rem 2.5rem rgba($color-black,0.5);
+        outline: solid 10px $color-primary;
+    }
+    .photos:not(:hover){
+        transform: scale(.9);
+    }
+}

@@ -12,17 +12,17 @@
     clip-path: polygon(0 0 ,100% 0 ,100% 75vh , 0 100%);
     position: relative;
 
-    &.logo{
+    .logo{
         position: absolute;
         top:2.5rem;
         left: 2rem;
 
-        &.img-logo{
+        .img-logo{
             height:3rem;
         }
     }
 
-    &.heading-box{
+    .heading-box{
         color:$color-white;
         text-transform: uppercase;
         position: absolute;
@@ -32,7 +32,7 @@
         text-align: center;
         backface-visibility: hidden;
 
-        &.main-header{
+        .main-header{
             font-size: 6rem;
             font-weight: 400;
             display: block;
