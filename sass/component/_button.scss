@@ -50,3 +50,13 @@
         background-color: $color-white;
     }
 }
+
+.btn-green{
+    background-color: $color-primary-dark;
+    color:$color-white;
+    text-transform: uppercase;
+
+    &::after{
+        background-color: $color-primary-dark;
+    }
+}

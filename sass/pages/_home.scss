@@ -54,3 +54,28 @@
 .feature-item:hover{
     transform: scaleY(1) scale(1.1);
 }
+
+.tour-section{
+    background-color: #f7f7f7;
+    margin-top: -7rem;
+    text-align: center;
+    padding-bottom:9rem;
+    .header-tour{
+        padding:15rem 0 1rem 0;
+        background-image: linear-gradient(to right , $color-primary-light , $color-primary-dark);
+        -webkit-background-clip: text;
+        color:transparent;
+        text-align: center;
+        font-weight:700;
+        font-size:2.5rem;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        transition: all .5s;
+
+        &:hover{
+            transform: skewY(2deg) skewX(15deg) scale(1.1);
+            text-shadow: .5rem 1rem 2rem rgba($color-black,0.2);
+        }
+    }
+}
