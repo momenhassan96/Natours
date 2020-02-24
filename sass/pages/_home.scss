@@ -81,8 +81,30 @@
 }
 
 .story-section{
-    // background-color: #f7f7f7;
     margin-top: -64px;
-    padding:60px 0;
+    padding:6rem 0;
     position: relative;
 }
+
+.booking-section{
+    background-image: linear-gradient($color-primary-light,$color-primary-dark);
+    padding:8rem 0;
+}
+
+.book{
+     background-image:linear-gradient(105deg,
+     rgba($color-white,.9) 0%,
+     rgba($color-white,.9) 50%,
+     transparent 50%),
+     url('../../images/nat-10.jpg');
+     background-size: cover;
+     width:75%;
+     margin:0 auto;
+     height:43rem;
+     padding:1.5rem 2rem;
+     box-shadow: 0 1.5rem 4rem rgba($color-black,0.5); 
+}
+
+.margin{
+    margin: 20px 0 30px 0;
+ }
